@@ -277,8 +277,10 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
+    padding: 2rem;
     margin-top: 10vh; }
   h1.lg-heading {
+    margin-top: 1rem;
     font-size: 3rem; }
   h2.sm-heading {
     font-size: 1rem; }

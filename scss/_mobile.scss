@@ -1,13 +1,30 @@
 // Wide screens
 @include mediaXl {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 // Laptops & Desktops
 @include mediaLg {
+    // h3 {
+    //     font-size: 1.1rem;
+    // }
 
+    .item {
+        width: 325px;
+    }
+
+    %project {
+        .content {
+            transform: translateY(70%);
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
 }
 
 // Tablets & Small Laptops
@@ -67,16 +84,25 @@
   }
 
   .projects {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+  }
+
+  %project {
+      .content {
+          transform: translateY(70%);
+      }
   }
 }
 
 // Smartphones
 @include mediaSm {
-  main#home h1 {
+    main {
+        min-width: 400px;
+  &#home h1 {
     padding: 2rem;
     margin-top: 10vh;
   }
+}
 
   h1.lg-heading {
       margin-top: 1rem;
@@ -89,5 +115,13 @@
 
   .projects {
       grid-template-columns: 1fr;
+
+      h3 {
+          font-size: 1rem;
+      }
+
+      p {
+          font-size: 0.8rem;
+      }
   }
 }

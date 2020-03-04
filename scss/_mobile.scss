@@ -7,10 +7,11 @@
 
 // Laptops & Desktops
 @include mediaLg {
-    // h3 {
-    //     font-size: 1.1rem;
-    // }
+// Home Page
 
+// About Page
+
+// My Work Page
     .item {
         width: 325px;
     }
@@ -25,6 +26,8 @@
         font-size: 0.9rem;
         line-height: 1.6rem;
     }
+
+// Contact Page
 }
 
 // Tablets & Small Laptops
@@ -71,7 +74,7 @@
           height: 150px;
       }
   }
-
+// About Page
   .about-info {
       grid-template-areas: 
       'bioimage'
@@ -82,7 +85,7 @@
 
       grid-template-columns: 1fr;
   }
-
+// My Work page
   .projects {
       grid-template-columns: 1fr;
   }
@@ -92,6 +95,17 @@
           transform: translateY(70%);
       }
   }
+// Contact Page
+      .wrapper {
+          grid-template-columns: 1fr;
+
+          .my-info {
+              h3, ul {
+                  text-align: center;
+              }
+          }
+      }
+
 }
 
 // Smartphones
@@ -112,7 +126,9 @@
   h2.sm-heading {
       font-size: 1rem;
   }
+// About Page
 
+// My Work Page
   .projects {
       grid-template-columns: 1fr;
 
@@ -122,6 +138,18 @@
 
       p {
           font-size: 0.8rem;
+      }
+  }
+
+// Contact Page
+  .contact {
+      form {
+        // grid-template-columns: 1fr;
+        display: block;
+
+        &>* {
+            margin-bottom: 1rem;
+        }
       }
   }
 }

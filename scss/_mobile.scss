@@ -1,155 +1,155 @@
 // Wide screens
 @include mediaXl {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 // Laptops & Desktops
 @include mediaLg {
-// Home Page
+	// Home Page
 
-// About Page
+	// About Page
 
-// My Work Page
-    .item {
-        width: 325px;
-    }
+	// My Work Page
+	.item {
+		width: 325px;
+	}
 
-    %project {
-        .content {
-            transform: translateY(70%);
-        }
-    }
+	%project {
+		.content {
+			transform: translateY(70%);
+		}
+	}
 
-    p {
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-    }
+	p {
+		font-size: 0.9rem;
+		line-height: 1.6rem;
+	}
 
-// Contact Page
+	// Contact Page
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
-    
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-      font-size: 5rem;
-    }
+	main {
+		align-items: center;
+		text-align: center;
 
-    .sm-heading {
-        font-size: 1.5rem;
-    }
-  }
+		.lg-heading {
+			line-height: 1;
+			margin-bottom: 1rem;
+			font-size: 5rem;
+		}
 
-  ul.menu-nav, 
-  div.menu-branding {
-      float: none;
-      width: 100%;
-      min-height: 0;
+		.sm-heading {
+			font-size: 1.5rem;
+		}
+	}
 
-      &.show {
-          transform: translate3d(0, 0, 0);
-      }
-  }
+	ul.menu-nav,
+	div.menu-branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
 
-  .menu-nav {
-      height: 75vh;
-      transform: translate3d(-100%, 0, 0);
-      font-size: 24px;
-  }
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-  .menu-branding {
-      height: 25vh;
-      transform: translate3d(100%, 0, 0);
+	.menu-nav {
+		height: 75vh;
+		transform: translate3d(-100%, 0, 0);
+		font-size: 24px;
+	}
 
-      .portrait {
-          background: url('../img/portrait_small.jpg');
-          width: 150px;
-          height: 150px;
-      }
-  }
-// About Page
-  .about-info {
-      grid-template-areas: 
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
+	.menu-branding {
+		height: 25vh;
+		transform: translate3d(100%, 0, 0);
 
-      grid-template-columns: 1fr;
-  }
-// My Work page
-  .projects {
-      grid-template-columns: 1fr;
-  }
+		.portrait {
+			background: url("../img/myportrait_small.jpg");
+			width: 150px;
+			height: 150px;
+		}
+	}
+	// About Page
+	.about-info {
+		grid-template-areas:
+			"bioimage"
+			"bio"
+			"job1"
+			"job2"
+			"job3";
 
-  %project {
-      .content {
-          transform: translateY(70%);
-      }
-  }
-// Contact Page
-      .wrapper {
-          grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+	// My Work page
+	.projects {
+		grid-template-columns: 1fr;
+	}
 
-          .my-info {
-              h3, ul {
-                  text-align: center;
-              }
-          }
-      }
+	%project {
+		.content {
+			transform: translateY(70%);
+		}
+	}
+	// Contact Page
+	.wrapper {
+		grid-template-columns: 1fr;
 
+		.my-info {
+			h3,
+			ul {
+				text-align: center;
+			}
+		}
+	}
 }
 
 // Smartphones
 @include mediaSm {
-    main {
-        min-width: 400px;
-  &#home h1 {
-    padding: 2rem;
-    margin-top: 10vh;
-  }
-}
+	main {
+		min-width: 400px;
+		&#home h1 {
+			padding: 2rem;
+			margin-top: 10vh;
+		}
+	}
 
-  h1.lg-heading {
-      margin-top: 1rem;
-      font-size: 3rem;
-  }
+	h1.lg-heading {
+		margin-top: 1rem;
+		font-size: 3rem;
+	}
 
-  h2.sm-heading {
-      font-size: 1rem;
-  }
-// About Page
+	h2.sm-heading {
+		font-size: 1rem;
+	}
+	// About Page
 
-// My Work Page
-  .projects {
-      grid-template-columns: 1fr;
+	// My Work Page
+	.projects {
+		grid-template-columns: 1fr;
 
-      h3 {
-          font-size: 1rem;
-      }
+		h3 {
+			font-size: 1rem;
+		}
 
-      p {
-          font-size: 0.8rem;
-      }
-  }
+		p {
+			font-size: 0.8rem;
+		}
+	}
 
-// Contact Page
-  .contact {
-      form {
-        // grid-template-columns: 1fr;
-        display: block;
+	// Contact Page
+	.contact {
+		form {
+			// grid-template-columns: 1fr;
+			display: block;
 
-        &>* {
-            margin-bottom: 1rem;
-        }
-      }
-  }
+			& > * {
+				margin-bottom: 1rem;
+			}
+		}
+	}
 }

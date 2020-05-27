@@ -13,6 +13,7 @@
   "author": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B\u001b[D\u001b[D\u001b[D\u001b[C Matthew Wessel",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "minimist": "^1.2.5",
+    "node-sass": "^4.14.1"
   }
 }

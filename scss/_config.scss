@@ -3,9 +3,10 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $projects: 3;
-$project-one-image: url(../img/projects/LW1simulation.jpg);
-$project-two-image: url(../img/projects/freeCodeCamp.jpg);
-$project-three-image: url(../img/projects/project3.jpg);
+$project-one-image: url(../img/projects/BBwpncompare.jpg);
+$project-two-image: url(../img/projects/LW1simulation.jpg);
+$project-three-image: url(../img/projects/freeCodeCamp.jpg);
+$project-four-image: url(../img/projects/project4.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {

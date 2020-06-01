@@ -168,11 +168,16 @@ main {
 .project-2 {
 	@extend %project;
 	background: $project-two-image;
-	background-size: contain;
+	background-size: cover;
 }
 .project-3 {
 	@extend %project;
 	background: $project-three-image;
+	background-size: cover;
+}
+.project-4 {
+	@extend %project;
+	background: $project-four-image;
 	background-size: cover;
 }
 
